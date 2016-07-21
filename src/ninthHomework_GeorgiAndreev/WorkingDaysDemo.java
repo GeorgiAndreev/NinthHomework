@@ -6,8 +6,6 @@ public class WorkingDaysDemo {
 
 		AllWork allWork1 = new AllWork();
 		
-		//Employee ivan = new Employee("Ivan");
-		//ivan.setAllwork(allWork1);
 		Employee stoqn = new Employee("Stoqn");
 		stoqn.setAllwork(allWork1);
 		Employee dragan = new Employee("Dragan");
@@ -39,7 +37,6 @@ public class WorkingDaysDemo {
 		int currentWorkingDay = 1;
 		
 		while(!allWork1.isAllWorkDone()) {
-		//while(currentWorkingDay < 5) {
 			System.out.println("\nWorking day ¹ " + currentWorkingDay++);
 			kolyo.work();
 			stoqn.work();

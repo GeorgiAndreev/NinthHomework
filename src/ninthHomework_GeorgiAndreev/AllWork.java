@@ -32,9 +32,6 @@ public class AllWork {
 			return null;
 		}
 		Task nextTask = this.tasks[this.currentUnassignedTask];
-		// for (int index = 0; index < tasks.length - 1; index++) {
-		// tasks[index] = tasks[index + 1];
-		// }
 		this.currentUnassignedTask++;
 		return nextTask;
 	}

@@ -61,6 +61,7 @@ class Employee {
 	}
 	
 	//method used in 7th homework
+	@SuppressWarnings("unused")
 	private void showReport() {
 		System.out.println("Employee name: " + this.name);
 		System.out.println("Current task name: " + this.currentTask.getName());
