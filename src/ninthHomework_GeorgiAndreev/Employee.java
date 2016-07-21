@@ -34,6 +34,10 @@ class Employee {
 		}
 		if (this.currentTask == null) {
 			this.currentTask = Employee.allwork.getNextTask();
+			System.out.print(this.name + " wants to get new task. ");
+			if (this.currentTask != null) {
+				System.out.print(this.name + " got " + this.currentTask.getName() + ".\n");
+			}
 		}
 		if (this.currentTask == null) {
 			System.out.println("No more tasks left in all work.");
@@ -49,7 +53,7 @@ class Employee {
 			this.currentTask = null;
 		} else {
 			if ((hoursLeftForCurrentDay == 0) && (this.currentTask.getWorkingHours() > 0)) {
-				System.out.println(this.name + " finished working day and has the following unfinished task: " + this.currentTask.getName());
+				System.out.println(this.name + " finished working day and has the following unfinished task: " + this.currentTask.getName() + ".");
 			} else {
 				if ((hoursLeftForCurrentDay > 0) && (this.currentTask.getWorkingHours() == 0)) {
 					System.out.println(this.name + " finished the following task: " + this.currentTask.getName() + " and will get another task today or will rest if no work left.");
