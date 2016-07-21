@@ -38,6 +38,11 @@ public class AllWork {
 
 	boolean isAllWorkDone() {
 		if (this.currentUnassignedTask > this.tasks.length - 1) {
+			for (int index = 0; index < tasks.length; index++) {
+				if(this.tasks[index].getWorkingHours() != 0) {
+					return false;
+				}
+			}
 			return true;
 		}
 		return false;
